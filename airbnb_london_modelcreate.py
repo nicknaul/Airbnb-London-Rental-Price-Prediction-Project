@@ -107,7 +107,8 @@ def model_():
 
     with open("model-london-test.pkl", "wb") as f:
        pickle.dump(model, f)
-
+    X_test.to_csv("X_test_london_final.csv")
+    
     return print("Model Created")
 
 model_()
