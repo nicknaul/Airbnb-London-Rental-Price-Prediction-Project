@@ -105,7 +105,7 @@ def model_():
     y_pred_test = pd.Series(model.predict(X_test))
     print(y_pred_test.head())
 
-    with open("model-london-test.pkl", "wb") as f:
+    with open("model-london-airbnb.pkl", "wb") as f:
        pickle.dump(model, f)
     X_test.to_csv("X_test_london_final.csv")
     
