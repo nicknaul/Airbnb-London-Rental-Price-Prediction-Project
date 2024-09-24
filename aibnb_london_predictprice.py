@@ -13,7 +13,7 @@ def make_prediction():
         model = pickle.load(f)
     predict_price = pd.Series(model.predict(df_london_predict))
 
-    print(predict_price.tail(20))
+    print(predict_price.head(20))
 
 
 make_prediction()
