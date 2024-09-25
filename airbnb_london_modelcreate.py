@@ -36,7 +36,7 @@ def clean_amenities(df):
 
     df = df.reset_index().drop(columns='index')
 
-    #split 'amenities' description into its individaul substrings
+    #split 'amenities' description into its individual substrings
     df_split = df['amenities'].str.rsplit(', ', n=-1, expand=True)
 
     #remove bracket and double quotation marks
@@ -56,7 +56,7 @@ def clean_amenities(df):
     df_amm=c.value_counts().head(50)
     df_amm=df_amm.reset_index()
 
-    #create new columns in df for the selected substrings
+    #create new columns in df for the selected substrings (50 new columns)
     t=0
     for t in range(len(df_amm)):
         df[df_amm['desc'].iloc[t]]=0
