@@ -8,7 +8,7 @@ Note: clean_amenities() in airbnb_london_modelcreate.py will take longer to proc
 Feel free to edit the values in 'X_test_london_final.csv' to test the price prediction. 
 The csv file 'X_test_london_final.csv' will be created in model creation process, therefore, it is imperative to run first the airbnb_london_modelcreate.py Python file. 
 
-Visit: https://nicknaul.github.io/Airbnb-London-Rental-Price-Prediction-Project/
+Visit the app: https://nicknaul.github.io/Airbnb-London-Rental-Price-Prediction-Project/
 
 Or  https://nicknaul.github.io/myportfolio/
 
